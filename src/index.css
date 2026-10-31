@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", sans-serif;
+  --font-display: "Syne", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-brand-red: #ff2a2a;
+}
+
+/* Custom premium styling */
+
+/* Transparent text outline stroke effect */
+.text-outline-white {
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.95);
+  color: transparent;
+}
+.text-outline-black {
+  -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.95);
+  color: transparent;
+}
+
+/* Luxury Grid Background Pattern */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+}
+
+/* Hide scrollbar when preloader is loading */
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Custom transitions and scrollbar width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0b0b;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff2a2a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d11e1e;
+}
